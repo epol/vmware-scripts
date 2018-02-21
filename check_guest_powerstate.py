@@ -61,7 +61,7 @@ except IOError as ex:
     pass
 
 if not SI:
-    logger.critical("Unable to open the connection to vsphere")
+    logger.info("Unable to open the connection to vsphere")
     print("UNKNOWN - Unable to open the connection to vsphere")
     sys.exit(3)
 logger.info("Connection established")
